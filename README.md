@@ -109,7 +109,7 @@ Signature = "cCexT...REDACTED...qtEHlCcA1g"
 
 Use Burp Suite's Intruder (or use something like FFUF or Turbo Intruder) and set up a request like the following
 
-```http
+```
 GET §/v1.0/applications§ HTTP/1.1
 Host: graph.microsoft.com
 Connection: close
