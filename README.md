@@ -14,7 +14,7 @@ You need:
 - Client ID
 - Client Secret
 
-```http
+```
 POST /53...TENANT GUID HERE...891b/oauth2/v2.0/token HTTP/2
 Host: login.microsoftonline.com
 Content-Length: 180
@@ -32,7 +32,7 @@ You need:
 - Client ID
 - Client Secret
 
-```http
+```
 POST /53...TENANT GUID HERE...891b/oauth2/v2.0/token HTTP/2
 Host: login.microsoftonline.com
 Content-Length: 195
@@ -45,7 +45,7 @@ client_id=f45...CLIENT ID HERE...52c9d
 
 ### The Response
 
-```http
+```
 HTTP/2 200 OK
 Cache-Control: no-store, no-cache
 Pragma: no-cache
@@ -75,7 +75,7 @@ Content-Length: 1295
 |`tid`|Tenant ID|`REDACTED-3e8f-4792-977f-0REDACTED91b`|
 |`roles`|permissions granted to that user|
 
-```json
+```
 Headers = {
   "typ": "JWT",
   "alg": "RS256",
@@ -127,4 +127,4 @@ Make the following substitutions
 |`{application-id}`|GUID from `scope=api://...` or `aud` from the JWT if its a GUID|
 |other fields|Look through any other information disclosed by the application and substitute other fields|
 
-Launch the attack in intruder and carefully review not just the `200 OK` responses but all the resposnes. There are some information disclosure issues in the error messages.
+Delete `https://graph.microsoft.com` from each line of `endpoints.txt`, copy and paste the payloads into intruder, uncheck "URL-encode these characters", and launch the attack. Carefully review not just the `200 OK` responses but all the resposnes. There are some information disclosure issues in the error messages.
