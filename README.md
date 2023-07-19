@@ -128,3 +128,7 @@ Make the following substitutions
 |other fields|Look through any other information disclosed by the application and substitute other fields|
 
 Delete `https://graph.microsoft.com` from each line of `endpoints.txt`, copy and paste the payloads into intruder, uncheck "URL-encode these characters", and launch the attack. Carefully review not just the `200 OK` responses but all the resposnes. There are some information disclosure issues in the error messages.
+
+## Resources
+
+- https://graphexplorerapi.azurewebsites.net/openapi/tree

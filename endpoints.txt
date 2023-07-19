@@ -22818,3 +22818,5 @@ https://graph.microsoft.com/v1.0/workbooks/{driveItem-id}/versions/{driveItemVer
 https://graph.microsoft.com/beta/workbooks/{driveItem-id}/versions/{driveItemVersion-id}/content
 https://graph.microsoft.com/v1.0/workbooks/{driveItem-id}/versions/{driveItemVersion-id}/microsoft.graph.restoreVersion
 https://graph.microsoft.com/beta/workbooks/{driveItem-id}/versions/{driveItemVersion-id}/microsoft.graph.restoreVersion
+https://graph.microsoft.com/v1.0/me/sendMail
+https://graph.microsoft.com/v1.0/me/mailboxSettings
